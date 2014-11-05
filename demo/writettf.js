@@ -1,10 +1,10 @@
 
 var fs = require('fs');
-var TTFReader = require('../lib/ttf/ttfreader');
-var TTFWriter = require('../lib/ttf/ttfwriter');
-var ttf2eot = require('../lib/ttf/ttf2eot');
-var ttf2woff = require('../lib/ttf/ttf2woff');
-var ttf2svg = require('../lib/ttf/ttf2svg');
+var TTFReader = require('../lib/main').TTFReader;
+var TTFWriter = require('../lib/main').TTFWriter;
+var ttf2eot = require('../lib/main').ttf2eot;
+var ttf2woff = require('../lib/main').ttf2woff;
+var ttf2svg = require('../lib/main').ttf2svg;
 
 
 var util = require('./util');

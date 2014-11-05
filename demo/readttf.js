@@ -1,6 +1,6 @@
 
 var fs = require('fs');
-var TTFReader = require('../lib/ttf/ttfreader');
+var TTFReader = require('../lib/main').TTFReader;
 var util = require('./util');
 
 

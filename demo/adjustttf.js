@@ -1,8 +1,8 @@
 
 var fs = require('fs');
-var TTFReader = require('../lib/ttf/ttfreader');
-var TTFWriter = require('../lib/ttf/ttfwriter');
-var TTF = require('../lib/ttf/ttf');
+var TTFReader = require('../lib/main').TTFReader;
+var TTFWriter = require('../lib/main').TTFWriter;
+var TTF = require('../lib/main').TTF;
 
 var util = require('./util');
 
@@ -38,4 +38,4 @@ ttfObject = adjustttf(ttfObject);
 
 var ttfBuffer = new TTFWriter().write(ttfObject);
 // 写ttf
-fs.writeFileSync('./output/iconfont-modify.ttf', util.toBuffer(ttfBuffer));
+fs.writeFileSync('./output/iconfont-adjust.ttf', util.toBuffer(ttfBuffer));
