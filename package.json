@@ -21,7 +21,8 @@
   ],
 
   "dependencies": {
-    "xmldom": "~ 0.1.19"
+    "xmldom": "~ 0.1.19",
+    "pako": "~ 0.2.4"
   },
 
   "repository": {
