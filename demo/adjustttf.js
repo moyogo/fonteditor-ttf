@@ -1,8 +1,8 @@
 
 var fs = require('fs');
-var TTFReader = require('../lib/main').TTFReader;
-var TTFWriter = require('../lib/main').TTFWriter;
-var TTF = require('../lib/main').TTF;
+var TTFReader = require('../main').TTFReader;
+var TTFWriter = require('../main').TTFWriter;
+var TTF = require('../main').TTF;
 
 var util = require('./util');
 
@@ -10,7 +10,7 @@ function readttf(file) {
     var data = fs.readFileSync(file);
     var arrayBuffer = util.toArrayBuffer(data);
     return arrayBuffer;
-} 
+}
 
 
 function adjustttf(ttfObject) {
@@ -20,7 +20,7 @@ function adjustttf(ttfObject) {
     ttf.setUnicode('$E001');
 
     // 翻转ttf
-    ttf.adjustGlyf({
+    ttf.adjustGlyf(null, {
         reverse: true,
         mirror: true,
         scale: 0.5

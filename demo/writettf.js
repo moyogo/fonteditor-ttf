@@ -1,10 +1,10 @@
 
 var fs = require('fs');
-var TTFReader = require('../lib/main').TTFReader;
-var TTFWriter = require('../lib/main').TTFWriter;
-var ttf2eot = require('../lib/main').ttf2eot;
-var ttf2woff = require('../lib/main').ttf2woff;
-var ttf2svg = require('../lib/main').ttf2svg;
+var TTFReader = require('../main').TTFReader;
+var TTFWriter = require('../main').TTFWriter;
+var ttf2eot = require('../main').ttf2eot;
+var ttf2woff = require('../main').ttf2woff;
+var ttf2svg = require('../main').ttf2svg;
 var deflate = require('pako').deflate;
 
 var util = require('./util');
@@ -13,12 +13,12 @@ function readttf(file) {
     var data = fs.readFileSync(file);
     var arrayBuffer = util.toArrayBuffer(data);
     return arrayBuffer;
-} 
+}
 
 function writettf(filename, buffer) {
-    
+
     var ttfObject  = new TTFReader().read(buffer);
-    
+
     // 写object
     fs.writeFileSync(filename +'.json', JSON.stringify(ttfObject));
 

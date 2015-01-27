@@ -1,7 +1,7 @@
 
 var fs = require('fs');
-var TTFWriter = require('../lib/main').TTFWriter;
-var svg2ttfobject = require('../lib/main').svg2ttfobject;
+var TTFWriter = require('../main').TTFWriter;
+var svg2ttfobject = require('../main').svg2ttfobject;
 
 function getEmpty() {
     var data = fs.readFileSync('./empty.json');
