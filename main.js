@@ -17,5 +17,7 @@ module.exports = {
     ttf2svg: require('./lib/ttf/ttf2svg'),
     svg2ttfobject: require('./lib/ttf/svg2ttfobject'),
     Reader: require('./lib/ttf/reader'),
-    Writer: require('./lib/ttf/writer')
+    Writer: require('./lib/ttf/writer'),
+    OTFReader: require('./lib/ttf/otfreader'),
+    otf2ttfobject: require('./lib/ttf/otf2ttfobject')
 };
