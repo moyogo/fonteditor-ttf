@@ -1,11 +1,11 @@
 {
   "name": "fonteditor-ttf",
 
-  "version": "0.0.13",
+  "version": "0.0.14",
 
-  "description": "ttf to woff,svg,eot convert, ttf adjust",
-  "keywords": ["font", "ttf", "woff", "svg", "eot"],
-  "homepage": "https://github.com/fontello/svg2ttf",
+  "description": "ttf to woff, svg, eot convert, otf to ttf convert, ttf adjust",
+  "keywords": ["font", "ttf", "woff", "svg", "eot", "otf"],
+  "homepage": "https://github.com/kekee000/fonteditor-ttf",
   "author": {
     "name": "kekee000",
     "email": "kekee000@gmail.com"
