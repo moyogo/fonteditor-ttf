@@ -5,7 +5,7 @@ var TTFWriter = require('../main').TTFWriter;
 var ttf2eot = require('../main').ttf2eot;
 var ttf2woff = require('../main').ttf2woff;
 var ttf2svg = require('../main').ttf2svg;
-var deflate = require('pako').deflate;
+//var deflate = require('pako').deflate;
 
 var util = require('./util');
 
@@ -32,7 +32,9 @@ function writettf(filename, buffer) {
     fs.writeFileSync(filename +'.eot', util.toBuffer(eotBuffer));
 
     // 写woff
-    var woffBuffer = ttf2woff(buffer, {deflate: deflate});
+    var woffBuffer = ttf2woff(buffer, {
+        // deflate: deflate
+    });
     fs.writeFileSync(filename +'.woff', util.toBuffer(woffBuffer));
 
     // 写svg
